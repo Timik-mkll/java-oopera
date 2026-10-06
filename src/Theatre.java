@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-/*public static*/ void main(String[] args) {
+/*public static*/void main(String[] args) {
     Actor actorVanya = new Actor("Ваня", "Шурин", Gender.MALE, 181.5);
     Actor actorSofa = new Actor("Софа", "Кайт", Gender.FEMALE, 169.0);
     Actor actorPixel = new Actor("Пиксель", "Котович", Gender.MALE, 175.0);
