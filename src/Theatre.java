@@ -3,15 +3,15 @@ import java.util.ArrayList;
 public class Theatre {
 
     public static void main(String[] args) {
-        Actor actorVanya = new Actor("Ваня", "Шурин", Gender.MALE, 181.5);
-        Actor actorSofa = new Actor("Софа", "Кайт", Gender.FEMALE, 169.0);
-        Actor actorPixel = new Actor("Пиксель", "Котович", Gender.MALE, 175.0);
+        Actor actorVanya = new Actor("Ваня", "Шурин", Gender.MALE, 181);
+        Actor actorSofa = new Actor("Софа", "Кайт", Gender.FEMALE, 169);
+        Actor actorPixel = new Actor("Пиксель", "Котович", Gender.MALE, 175);
 
         Director directorPetr = new Director("Пётр", "Васильевич", Gender.MALE, 23);
         Director directorOleg = new Director("Олег", "Николаевич", Gender.MALE, 31);
 
-        String musicAuthor = "Лиза";
-        String choreographer = "Карина";
+        Person musicAuthor = new Person("Лиза", "Красоткина", Gender.FEMALE);
+        Person choreographer = new Person("Карина", "Лукина", Gender.FEMALE);
 
         ArrayList<Actor> actorsMoon = new ArrayList<>();
         ArrayList<Actor> actorsOpera = new ArrayList<>();
@@ -49,7 +49,7 @@ public class Theatre {
         showMoon.printActors();
 
         System.out.println("\nЗаменим несуществующего актёра в опере:");
-        Actor someNewActor = new Actor("Василий", "Островской", Gender.MALE, 176.5);
+        Actor someNewActor = new Actor("Василий", "Островской", Gender.MALE, 176);
         showOpera.replaceActor(someNewActor, "Лебедев");
 
 
